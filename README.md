@@ -6,19 +6,17 @@
 * Chat room name
 * List of people in chat room
 * Reveal messages
-    * Author's name
-    * Message body
-    * Message time stamp
-    * Message with image attachment
+  * Author's name
+  * Message body
+  * Message time stamp
+  * Message with image attachment
 * Message input
-* Message submit button
 
 
 ###Less Important
 
 * Author's avatar
 * Search
-* Text decoration & emoticons
 * Multiple chat rooms
 
 
@@ -28,3 +26,5 @@
 * Auto expand twitter links
 * Delete
 * Edit
+* Text decoration
+* Message submit button
