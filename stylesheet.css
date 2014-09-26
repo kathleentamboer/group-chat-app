@@ -16,8 +16,8 @@ ul {
 
 img {
   display: block;
-  width: 50;
-  height: 50;
+  width: 100%;
+  height: auto;
 }
 
 .group:after {
@@ -26,9 +26,13 @@ img {
   clear: both;
 }
 
+html, body {
+  height: 100%;
+  position: relative;
+}
+
 body {
   font-family: sans-serif;
-  padding: 20px;
   color: gray;
   font-size: 16px;
 }
@@ -45,9 +49,7 @@ h3 {
 /* -- HEADER -- */
 
 .wrap {
-  max-width: 1000px;
-  margin: auto;
-  border: solid gray 2px;
+
 }
 
 .main-hub {
@@ -59,11 +61,22 @@ h3 {
   padding: 20px 0;
   background: #022735;
   color: #F8F8F8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
 }
 
 .messages {
   padding: 10px;
   background: #C0C0C0;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 315px;
+  bottom: 50px;
+  overflow-y: scroll;
 }
 
 .message {
@@ -76,7 +89,12 @@ h3 {
 
 .sidebar {
   background: red;
-  float: right;
+  width: 290px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  width: 300px;
 }
 
 
@@ -102,6 +120,12 @@ h3 {
   padding: 10px;
   background: #457485;
   color: #F8F8F8;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 315px;
+  height: 30px;
+
 }
 
 .chat-actions {
@@ -111,14 +135,12 @@ h3 {
 .chat-title h1 {
   font-size: 24px;
   font-weight: bold;
+  float: left;
 }
 
-.chat-actions a {
-  float: right;
-}
 
 .message-details {
-  background: #99FFFF;
+  background: #BDE0FC;
   max-width: 450px;
   margin: 0 10px 0 60px;
   padding: 10px;
@@ -151,7 +173,7 @@ h3 {
 }
 
 .message-me-details {
-  background: #99FF99;
+  background: #BDE0FC;
   max-width: 450px;
   margin: 0 10px 0 60px;
   padding: 10px;
@@ -162,11 +184,40 @@ h3 {
 
 }
 
+.sidebar {
+  padding: 10px 0 0 15px;
+}
+
+.sidebar h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.sidebar .rooms {
+  padding: 0 0 20px 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+}
+
+.sidebar img {
+  width: 50px;
+  height: 50px;
+}
 
 /* -- FOOTER -- */
 
 .message-input {
-
+  background: yellow;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 315px;
+  height: 50px;
+  width: 100$;
 }
 
 .message-input a {
