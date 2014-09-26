@@ -1,6 +1,6 @@
 /* -- RESET -- */
 
-html, body, main, nav, header, section, article, aside, footer, div, h1, ul, li, a, form, img, p, h3 h4 {
+html, body, main, nav, header, section, article, aside, footer, div, h1, ul, li, a, form, img, p, h3, h4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -50,7 +50,7 @@ body {
 }
 
 .header {
-  padding: 20px 0;
+  padding: 30px 0 20px 0;
   background: #173333;
   color: #F8F8F8;
   position: absolute;
@@ -61,7 +61,7 @@ body {
 }
 
 .messages {
-  padding: 10px;
+  padding: 10px 15px 10px 10px;
   background: #fff;
   position: absolute;
   top: 140px;
@@ -72,11 +72,11 @@ body {
 }
 
 .message {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .message-me {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .sidebar {
@@ -101,7 +101,7 @@ body {
 .header li img {
   width: 25px;
   height: 25px;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 .header ul {
@@ -123,11 +123,28 @@ body {
   left: 0;
   right: 315px;
   height: 30px;
+}
 
+.chat-title img {
+  width: 25px;
+  height: 25px;
+  float: left;
 }
 
 .chat-actions {
+  position: relative;
   float: right;
+}
+
+.chat-actions img {
+  position: relative;
+  float: right;
+  margin: 3px 60px 0 130px;
+}
+
+
+.chat-actions .exit {
+
 }
 
 .chat-title h1 {
@@ -136,9 +153,30 @@ body {
   float: left;
 }
 
-.message li {
-/*  font-size: 14px;
-  font-weight: none;*/
+.field {
+    position: relative;
+    height: 30px;
+    width: 200px;
+}
+
+.placeholder {
+  color: gray;
+  z-index: 1;
+  padding: 1px 0 0 10px;
+  background: transparent;
+}
+
+.chat-title input, label {
+    border-radius: 20px;
+    position: absolute;
+    top: 80;
+    left: 0;
+    background: white;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-indent: 5px;
+    line-height: 30px;
 }
 
 .message-details {
@@ -163,12 +201,14 @@ body {
   width: 50px;
   height: 50px;
   float: left;
+  border: 1px solid #E6E6E6;
 }
 
 .message-me img {
   width: 50px;
   height: 50px;
   float: right;
+  border: 1px solid #E6E6E6;
 }
 
 .message-me p {
@@ -189,8 +229,9 @@ body {
   margin: 10px 20px 5px 0;
 }
 
-.message-me-details h3 {
-
+.message-me-details .attachment {
+  width: 450px;
+  height: auto;
 }
 
 
@@ -198,43 +239,59 @@ body {
   position: absolute;
   bottom: 0;
   width: 320px;
+  background: white;
 }
 
 .sidebar h3 {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: #5E5E5E;
   padding: 10px;
-  background: #5E5E5E;
+  background: #CFD1D1;
   margin: 0;
-  border-bottom: #5E5E5E solid 2px;
-}
-
-.sidebar .rooms {
-
+  border-bottom: #CFD1D1 solid 2px;
 }
 
 .rooms li {
-  color: #5E5E5E;
+  color: gray;
   font-weight: bold;
-  background: #969696;
-  border-bottom: #5E5E5E solid 2px;
-  padding: 10px
+  background: white;
+  border-bottom: #E6E6E6 solid 1px;
+  padding: 10px;
+  border-left: #E6E6E6 solid 1px;
 }
 
+.rooms li:hover {
+  background: gray;
+  color: white;
+}
+
+.rooms li:before {
+  content: "35";
+  background: #B3424A;
+  padding: 5px 20px;
+  margin: 5px 10px 5px 0;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
 .sidebar .people {
-  background: green;
   overflow-y: scroll;
   position: absolute;
   width: 320px;
-  bottom: 0;
-  height: 332px;
+  top: 305;
+  height: 300px;
 }
 
 .sidebar img {
   width: 50px;
   height: 50px;
-  padding: 10px;
+  margin: 10px;
+  border: 1px solid #E6E6E6;
+  border-right: solid #42B3AB 5px;
 }
 
 .sidebar .person img {
@@ -242,12 +299,22 @@ body {
 }
 
 .sidebar .person h4 {
-  background: yellow;
-  padding: 15px;
+  padding: 16px;
+  margin: 10px 0 0 0;
   float: left;
 }
 
+.sidebar .people li {
+  border-top: #E6E6E6 solid 1px;
+  color: gray;
+  font-weight: bold;
+  background: white;
+  border-left: #E6E6E6 solid 1px;
+}
 
+.sidebar .people li:last-child img {
+  border-right: solid #B3424A 5px;
+}
 
 /* -- FOOTER -- */
 
@@ -257,19 +324,33 @@ body {
   left: 0;
   bottom: 0;
   right: 315px;
-  height: 50px;
+  height: 60px;
   width: 100$;
 }
 
 .message-input img {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 }
 
 .message-input a {
   float: left;
+  padding: 10px;
+}
+
+.message-input a:last-child {
+  float: right;
+  padding: 10px 10px 10px 10px;
 }
 
 .message-input form {
   float: left;
+}
+
+.message-input input {
+  float: left;
+  width: 840px;
+  height: 35px;
+  position: relative;
+  margin: 10px 0;
 }
