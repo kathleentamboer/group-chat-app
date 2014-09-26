@@ -52,23 +52,31 @@ h3 {
 
 .main-hub {
   float: left;
-  background: blue;
-  max-width: 700px;
+  width: 700px;
 }
 
 .header {
-  background: yellow;
   padding: 20px 0;
+  background: #022735;
+  color: #F8F8F8;
 }
 
 .messages {
-  background: green;
   padding: 10px;
+  background: #C0C0C0;
 }
 
+.message {
+  margin: 0 0 20px 0;
+}
+
+.message-me {
+  margin: 0 0 20px 0;
+}
 
 .sidebar {
   background: red;
+  float: right;
 }
 
 
@@ -80,8 +88,10 @@ h3 {
   text-align: center;
 }
 
-.header ul {
-
+.header li img {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
 }
 
 .header li {
@@ -89,20 +99,39 @@ h3 {
 }
 
 .chat-title {
-  background: gray;
-/*  float: left;*/
+  padding: 10px;
+  background: #457485;
+  color: #F8F8F8;
+}
+
+.chat-actions {
+  float: right;
 }
 
 .chat-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chat-actions a {
+  float: right;
+}
+
+.message-details {
+  background: #99FFFF;
+  max-width: 450px;
+  margin: 0 10px 0 60px;
+  padding: 10px;
 
 }
 
-.chat-title form {
+.message-details p {
 
 }
 
-.chat-title a {
-
+.message-details li {
+  float: left;
+  margin: 10px 20px 0 0;
 }
 
 .message img {
@@ -111,38 +140,25 @@ h3 {
   float: left;
 }
 
-.message p {
+.message-me img {
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+
+.message-me p {
+
+}
+
+.message-me-details {
+  background: #99FF99;
   max-width: 450px;
   margin: 0 10px 0 60px;
   padding: 10px;
-  background: blue;
+  float: right;
 }
 
-.message li {
-
-}
-
-.message-details {
-
-}
-
-.message .message-details ul {
-
-}
-
-.message-details li {
-
-}
-
-.message .message-me {
-
-}
-
-.message .message-me img {
-
-}
-
-.message .message-me p {
+.message-me ul {
 
 }
 
@@ -154,9 +170,9 @@ h3 {
 }
 
 .message-input a {
-
+  float: left;
 }
 
 .message-input form {
-
+  float: left;
 }
