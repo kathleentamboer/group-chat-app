@@ -1,6 +1,6 @@
 /* -- RESET -- */
 
-html, body, main, nav, header, section, article, aside, footer, div, h1, ul, li, a, form, img, p, h3 {
+html, body, main, nav, header, section, article, aside, footer, div, h1, ul, li, a, form, img, p, h3 h4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -37,14 +37,6 @@ body {
   font-size: 16px;
 }
 
-a {
-
-}
-
-h3 {
-
-}
-
 
 /* -- HEADER -- */
 
@@ -59,7 +51,7 @@ h3 {
 
 .header {
   padding: 20px 0;
-  background: #022735;
+  background: #173333;
   color: #F8F8F8;
   position: absolute;
   top: 0;
@@ -70,7 +62,7 @@ h3 {
 
 .messages {
   padding: 10px;
-  background: #C0C0C0;
+  background: #fff;
   position: absolute;
   top: 140px;
   left: 0;
@@ -112,13 +104,19 @@ h3 {
   padding: 10px;
 }
 
+.header ul {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
 .header li {
   float: right;
 }
 
 .chat-title {
   padding: 10px;
-  background: #457485;
+  background: #658A8A;
   color: #F8F8F8;
   position: absolute;
   top: 90px;
@@ -138,22 +136,27 @@ h3 {
   float: left;
 }
 
+.message li {
+/*  font-size: 14px;
+  font-weight: none;*/
+}
 
 .message-details {
-  background: #BDE0FC;
+  background: #CFD1D1;
   max-width: 450px;
   margin: 0 10px 0 60px;
   padding: 10px;
 
 }
 
-.message-details p {
-
+.message-details h3 {
+  font-size: 14px;
+  margin: 10px 0 5px 0;
 }
 
 .message-details li {
   float: left;
-  margin: 10px 20px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .message img {
@@ -173,51 +176,94 @@ h3 {
 }
 
 .message-me-details {
-  background: #BDE0FC;
+  background: #E6E6E6;
   max-width: 450px;
   margin: 0 10px 0 60px;
   padding: 10px;
   float: right;
 }
 
-.message-me ul {
+.message-me li h3 {
+  float: left;
+  font-size: 14px;
+  margin: 10px 20px 5px 0;
+}
+
+.message-me-details h3 {
 
 }
 
+
 .sidebar {
-  padding: 10px 0 0 15px;
+  position: absolute;
+  bottom: 0;
+  width: 320px;
 }
 
 .sidebar h3 {
   font-size: 24px;
   font-weight: bold;
   color: white;
-  margin: 0 0 10px 0;
+  padding: 10px;
+  background: #5E5E5E;
+  margin: 0;
+  border-bottom: #5E5E5E solid 2px;
 }
 
 .sidebar .rooms {
-  padding: 0 0 20px 0;
+
 }
 
-.sidebar li {
-  padding: 10px 0;
+.rooms li {
+  color: #5E5E5E;
+  font-weight: bold;
+  background: #969696;
+  border-bottom: #5E5E5E solid 2px;
+  padding: 10px
+}
+
+.sidebar .people {
+  background: green;
+  overflow-y: scroll;
+  position: absolute;
+  width: 320px;
+  bottom: 0;
+  height: 332px;
 }
 
 .sidebar img {
   width: 50px;
   height: 50px;
+  padding: 10px;
 }
+
+.sidebar .person img {
+  float: left;
+}
+
+.sidebar .person h4 {
+  background: yellow;
+  padding: 15px;
+  float: left;
+}
+
+
 
 /* -- FOOTER -- */
 
 .message-input {
-  background: yellow;
+  background: #173333;
   position: absolute;
   left: 0;
   bottom: 0;
   right: 315px;
   height: 50px;
   width: 100$;
+}
+
+.message-input img {
+  width: 25px;
+  height: 25px;
 }
 
 .message-input a {
