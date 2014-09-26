@@ -349,8 +349,23 @@ body {
 
 .message-input input {
   float: left;
-  width: 840px;
+  width: 720px;
   height: 35px;
   position: relative;
   margin: 10px 0;
+  border: #E6E6E6 solid 1px;
+}
+
+.message-input button {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  background: #E6E6E6;
+}
+
+button:hover {
+  cursor: pointer;
+  background: gray;
+  border: none;
 }
